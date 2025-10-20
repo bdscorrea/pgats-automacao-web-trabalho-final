@@ -66,7 +66,7 @@ describe('Automation Exercise XPATH', () => {
         cy.contains('b', 'Account Created!')
     }); 
 
-    it('Login com Sucesso', () => {
+    it('Login com sucesso', () => {
 
         cy.xpath('//*[@id="form"]/div/div/div[1]/div/form/input[2]').type(data.email)
         cy.xpath('//*[@id="form"]/div/div/div[1]/div/form/input[3]').type(data.pass)   
@@ -77,7 +77,7 @@ describe('Automation Exercise XPATH', () => {
 
         });
 
-        it('Login Inválido', () => {
+        it('Login sem sucesso', () => {
 
         cy.xpath('//*[@id="form"]/div/div/div[1]/div/form/input[2]').type('testesucesso@teste.com')
         cy.xpath('//*[@id="form"]/div/div/div[1]/div/form/input[3]').type('123457', {log: false})   

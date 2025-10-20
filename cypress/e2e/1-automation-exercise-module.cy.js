@@ -24,7 +24,7 @@ describe('Automation Exercise Module', () => {
         cy.contains('b', 'Account Created!')
     }); 
 
-    it('Login com Sucesso', () => {
+    it('Login com sucesso', () => {
         cy.get('a[href="/login"]').should('be.visible')
         cy.navegarParaLogin()
         login.preencherFormularioDeLogin(data.email, data.pass)
@@ -33,7 +33,7 @@ describe('Automation Exercise Module', () => {
         cy.get(':nth-child(10) > a').should('contain', 'Logged in as qa tester');
 
         });
-        it('Login Inválido', () => {
+        it('Login sem sucesso', () => {
             cy.get('a[href="/login"]').should('be.visible')
             cy.navegarParaLogin()
             login.preencherFormularioDeLogin(data.email, '102030')
