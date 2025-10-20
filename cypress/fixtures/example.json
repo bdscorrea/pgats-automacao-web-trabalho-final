@@ -1,0 +1,7 @@
+{
+  "name": "qa tester",
+  "email": "testesucesso@teste.com",
+  "pass": "12345",
+  "subject": "Fixtures are a great way to mock data for responses to routes",
+  "message": "teste Fixtures teste Fixtures teste Fixtures teste Fixtures"
+}

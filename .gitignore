@@ -1,0 +1,6 @@
+ide-config.txt
+/node_modules/
+/package-lock.json
+/cypress/screenshots
+/cypress/videos
+/cypress/reports
